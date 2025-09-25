@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadows and overflow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            border: 2px solid black;
+            display: flex;
+        }
+        nav ul li{ 
+            list-style-position: inside;
+            list-style-type: none;
+            padding: 23px;
+            /* list-style:disc or url of image inside ; */
+            /* list-style: inside url(./favicon-16x16.png); */
+            /* list-style-image: url(); */
+        }
+
+        main p{
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+            overflow:hidden scroll;
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+            /* white-space:nowrap;
+            text-overflow:clip; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quas adipisci quod commodi hic repellendus sequi libero veniam. Quaerat tempore dolor itaque officiis aspernatur in illo, aliquid numquam facere quidem saepe maiores natus nemo exercitationem, porro, blanditiis neque animi delectus non. Porro nesciunt nobis nemo quae accusamus laudantium nulla blanditiis.
+        </p>
+    </main>
+</body>
+</html>
